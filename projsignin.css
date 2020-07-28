@@ -1,0 +1,56 @@
+* {
+    margin: 0px;   
+    padding: 0px;
+  }
+
+.heading{
+    padding-top: 2em;
+    left: 50%;
+    transform: translateX(40%);
+    font-weight: bolder;
+    color: darkcyan;
+    font-size: 50px;
+}
+
+.inp{
+    
+    left: 50%;
+    transform: translateX(40%);
+    padding-top: 2em;
+}
+
+.mail,.password{
+    padding-bottom: 0.5em;
+    padding-top: 2em;
+}
+
+.inp input{
+    padding-bottom: 2em;
+    width: 30em;
+}
+
+.heading2{
+    padding-top: 2em;
+    padding-bottom: 1em;
+    left: 50%;
+    transform: translateX(40%);
+    font-weight: bolder;
+    color: darkcyan;
+    font-size: 50px;
+}
+
+.subs{
+    left: 50%;
+    transform: translateX(40%);
+
+}
+
+@media screen and (max-width:1024px){
+    .inp input{
+        width: 20em;
+    } 
+    .subs{
+        left: 50%;
+    transform: translateX(20%);
+    }
+}

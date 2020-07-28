@@ -1,0 +1,32 @@
+* {
+    margin: 0px;   
+    padding: 0px;
+  }
+ 
+.pics{
+    width: 250px;
+    flex-direction: column;
+    padding-top: 4em;
+    padding-left: 3em;
+}
+
+.allframes{ 
+    padding-bottom: 4em;
+}
+
+.f3,.f4{
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+
+.heading{
+    font-weight: bolder;
+    font-size: 50px;
+    color: darkcyan;
+    padding: 2em 4em 2em 4em;
+}
+
+.b{
+    font-weight: bold;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}

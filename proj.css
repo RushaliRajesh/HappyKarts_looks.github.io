@@ -1,0 +1,180 @@
+ * {
+    margin: 0px;   
+    padding: 0px;
+  }
+
+body{
+  font-family: sans-serif;
+}
+
+header{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container,.kart{
+  flex: 1;
+}
+
+.logo-pic{
+  width: 130px;
+}
+
+nav{
+  flex: 3;     
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: darkcyan;
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+.kart-pic{
+  width: 40px;
+  padding-left: 2em;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(163, 12, 163);
+}
+
+.presentation{
+  display: flex;
+  padding-top: 1em;
+  margin: 4em;
+  justify-content: space-around;
+}
+
+/*.cover img{
+  width: 500px;
+
+}*/
+
+.perspective{
+  padding-top: 1em;
+  color: darkcyan;
+}
+
+.tag1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tag2{
+  padding-top: 4em;
+  padding-bottom: 5em;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.cta-select{
+  padding: 1em 1em 1em 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid rgb(163, 12, 163);
+  background-color: transparent;
+  color: rgb(163, 12, 163);
+}
+
+.cta-add{
+  padding: 1em 1em 1em 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid rgb(163, 12, 163);
+  background-color: rgb(163, 12, 163);
+  color: white;
+}
+
+.cta{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 15em;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid white;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: darkcyan;
+  color: white;
+  transform: rotateY(180deg); 
+}
+
+@media screen and (max-width:1024px){
+  .presentation{
+    flex-direction: column;
+  }
+  .introduction{
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1{
+    font-size: 28px; 
+  }
+  .intro-text p{
+    font-size: 18px;
+  }
+  .cta{
+    padding: 10px 0px 0px 0px;
+    margin: 10px 0px 10px 10px;
+  }
+  .cover{
+    padding-top: 3em;
+    left: 50%;
+    transform: translateX(16%);
+
+  }
+
+} 
